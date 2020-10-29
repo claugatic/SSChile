@@ -11,7 +11,7 @@ setwd(WD)
 repfile <- SS_output(dir=WD)
 
 
-SS_tune_comps(repfile, fleets = "all", option = "Francis",
-digits = 6, write = TRUE)
+#SS_tune_comps(repfile, fleets = "all", option = "Francis",
+#digits = 6, write = TRUE)
 
 SS_plots(repfile)

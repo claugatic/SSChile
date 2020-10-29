@@ -1,0 +1,182 @@
+---
+title: "**Summary chilean Hake model in SS (1992-2020)**"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# group members
+Claudio Gatica, Francisco Contreras,Marcos Arteaga, Aquiles Sepúlveda 
+
+## General characteristics
+
+Chilean hake (Merluccius gayi gayi) sustains an important fishery composed of two fleets, that is, the bottom-trawl industrial
+fleet (large vessels) and the artisanal fleet (smaller vessels and boats). The hake present intermediate growth and mean longevity with a maximun age 17 years in females and 11 years in males. 
+
+## Information available
+
+There are official catch data and estimates of illegal catches between 1992-2020. Furthermore, abundance and biomass from survey in august (spawning period). Additional impurt are official landings from 1940-1991 but without CAA and abundance index.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=5in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/SSChile/model1/plots/data_plot2.png}
+\caption{Chilean hake data (1992-2020)}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=5in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/SSChile/model2/plots/data_plot2.png}
+\caption{Chilean hake data (1940-2020)}
+\end{figure}
+
+\newpage
+
+## Developed activities
+
+a. Model costruction incorporating two fleets, catches, age-composition (fleets and survey) and biomass acoustic survey.
+b. Structure data file to SS.
+c. Structure control file-
+d. Solve problems following examples, manual_SS, lectures and specially echoinput file.
+e. Review different options to recruitment, include block to selectivity.
+f. Generate output and summary to explore a first base model.
+e. Review data weithing options.
+g. Include bias correction SR.
+f. Explore diagnostic options (i.e. retrospective analysis).
+
+\newpage
+
+## Model and package problem
+
+1. Package ‘r4ss’ was built under R version 3.6.3 
+
+2. SS ADMB safe libraries compiled with Microsoft Visual C++ 2015 14.0(64bit)
+Copyright (c) 2008-2015 ADMB Foundation and Regents of the University of California
+Build date: Jun 13 2017.
+
+3. SS ADMB-12.2 safe libraries compiled with GNU C++ 8.3.0 (64bit)
+Copyright (c) 2008-2020 ADMB Foundation and Regents of the University of California
+Build date: Jul 31 2020
+
+Interaction problem between r4ss and version SS (jul 2020).
+
+* You are using 3.30.16.0 which SHOULD work with this R code.
+* CompReport file separated by this code as follows (rows = Ncomps*Nbins):
+
+Error in 1:ncol(morph_indexing) : argument of length 0
+> SS_plots(repfile)
+Error in SS_plots(repfile) : objeto 'repfile' no encontrado
+> 
+> SS_tune_comps(repfile, fleets = "all", option = "Francis",+ digits = 6, write = TRUE)
+Error in SS_tune_comps(repfile, fleets = "all", option = "Francis", digits = 6,  : 
+  objeto 'repfile' no encontrado
+
+\newpage
+
+## Results
+## Catches and F
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/catch2 landings stacked.png}
+\label{x}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/catch9 harvest rate.png}
+\label{x}
+\end{figure}
+
+\newpage
+
+### Index fit
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/index2_cpuefit_CRUCERO.png}
+\label{x}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/index2_cpuefit_PESQUERIA1.png}
+\label{x}
+\end{figure}
+
+\newpage
+
+### Age composition
+
+Fleet 1 (official)
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/comp_agefit_data_weighting_TA1.8_PESQUERIA1.png}
+\label{x}
+\end{figure}
+
+Fleet 2 (not reported)
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/comp_agefit_data_weighting_TA1.8_PESQUERIA2.png}
+\label{x}
+\end{figure}
+
+\newpage
+
+Survey
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/comp_agefit_data_weighting_TA1.8_CRUCERO.png}
+\label{x}
+\end{figure}
+
+### CAA
+
+Survey
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/comp_agefit_flt1mkt0_page2.png}
+\label{x}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/comp_agefit_flt2mkt0.png}
+\label{x}
+\end{figure}
+
+
+### Selectivity by fleets and block
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/sel02_multiple_fleets_age2.png}
+\label{x}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/sel11_timevary_surf_flt1sex1.png}
+\label{x}
+\end{figure}
+
+\newpage
+
+### Time series
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=6in,width=6in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/ts9_Fraction_of_unfished_with_95_asymptotic_intervals_intervals.png}
+\label{x}
+\end{figure}
+
+\newpage
+

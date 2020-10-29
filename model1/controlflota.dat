@@ -240,7 +240,7 @@
  #_6=mult_by_size-at-age_N
  #_7=mult_by_generalized_sizecomp
 #_Factor  Fleet  Value
-1	     1	1	    # Survey CV for survey/fleet 1
+1	     1	0	    # Survey CV for survey/fleet 1
 #1	     2	0.3	    # Survey CV for survey/fleet 1-
 5	     1	1.89	# age comp data for fleet 1
 5	     2	1.19	# age comp data for fleet 2
