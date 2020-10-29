@@ -13,36 +13,35 @@ Claudio Gatica, Francisco Contreras,Marcos Arteaga, Aquiles Sepúlveda
 
 ## General characteristics
 
-Chilean hake (Merluccius gayi gayi) sustains an important fishery composed of two fleets, that is, the bottom-trawl industrial
-fleet (large vessels) and the artisanal fleet (smaller vessels and boats). The hake present intermediate growth and mean longevity with a maximun age 17 years in females and 11 years in males. 
+Chilean hake (**Merluccius gayi gayi**) sustains an important fishery composed of two fleets, that is, the bottom-trawl industrial fleet (large vessels) and the artisanal fleet (smaller vessels and boats). The hake presents intermediate growth and mean longevity with a maximum age 17 years in females and 11 years in males.
 
 ## Information available
 
-There are official catch data and estimates of illegal catches between 1992-2020. Furthermore, abundance and biomass from survey in august (spawning period). Additional impurt are official landings from 1940-1991 but without CAA and abundance index.
+There are official catch data and estimates of illegal catches between 1992-2020. Furthermore, abundance and biomass from survey in august (spawning period). Additional input is official landing from 1940-1991 but without CAA and abundance index.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=4in,width=5in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/SSChile/model1/plots/data_plot2.png}
-\caption{Chilean hake data (1992-2020)}
+\caption{Data chilean hake (1992-2010)}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=4in,width=5in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/SSChile/model2/plots/data_plot2.png}
-\caption{Chilean hake data (1940-2020)}
+\caption{Data chilean hake (1940-2010)}
 \end{figure}
 
 \newpage
 
-## Developed activities
+## Activities
 
-a. Model costruction incorporating two fleets, catches, age-composition (fleets and survey) and biomass acoustic survey.
+a. Model construction incorporates two fleets, catches, age-composition (fleets and survey) and biomass acoustic survey.
 b. Structure data file to SS.
-c. Structure control file-
+c. Structure control file.
 d. Solve problems following examples, manual_SS, lectures and specially echoinput file.
-e. Review different options to recruitment, include block to selectivity.
+e. Review different options to recruitment, include blocks to selectivity.
 f. Generate output and summary to explore a first base model.
-e. Review data weithing options.
+e. Review data weighing options.
 g. Include bias correction SR.
 f. Explore diagnostic options (i.e. retrospective analysis).
 
@@ -76,9 +75,9 @@ Error in SS_tune_comps(repfile, fleets = "all", option = "Francis", digits = 6, 
 \newpage
 
 ## Results
-## Catches 
+### Catches 
 
-In Chile two Institutes develop assessment regulary in chilean hake. Furthermore, where each one has data bases different in some aspect i.e. monitoring program, spacial coverage by fleets, each reading.
+In Chile two Institutes develop assessment regularly in chilean hake. Furthermore, where each one has databases different in some aspect i.e. monitoring program, spacial coverage by fleets, each reading.
 
 \begin{figure}[htbp]
 \centering
@@ -86,13 +85,11 @@ In Chile two Institutes develop assessment regulary in chilean hake. Furthermore
 \label{Lading 1940-2020}
 \end{figure}
 
-
-
 \newpage
 
 ### Index fit
 
-In the modelo we consider the index from acoustic survey and catch rate index. There are poor fit at the beggining of the series, this situation is similar with regular stock assessment from the institute.
+In the model, we consider the index from the acoustic survey and catch rate index. There is a poor fit at the beginning of the series, this situation is similar to regular stock assessment from the institute. The trend in biomass, abundance and fishing mortality are consistent with the result of assessment developed but with an improvement in the shape to the fit. 
 
 \begin{figure}[htbp]
 \centering
@@ -110,14 +107,13 @@ In the modelo we consider the index from acoustic survey and catch rate index. T
 
 ### Age composition
 
-The age composition fit to different fleets and sourvey show acceptable performance with the exception in period 2002-2004 when the composition of age in the population present changes with low presence of adults.
+The age composition fit to different fleets and survey shows acceptable performance with the exception in period 2002-2004 when the composition of age in the population present changes with low presence of adults.
 
 Fleet 1 (official)
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/comp_agefit_data_weighting_TA1.8_PESQUERIA1.png}
-\label{x}
 \end{figure}
 
 Fleet 2 (not reported)
@@ -125,7 +121,6 @@ Fleet 2 (not reported)
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/comp_agefit_data_weighting_TA1.8_PESQUERIA2.png}
-\label{x}
 \end{figure}
 
 \newpage
@@ -135,7 +130,6 @@ Survey
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/comp_agefit_data_weighting_TA1.8_CRUCERO.png}
-\label{x}
 \end{figure}
 
 ### CAA
@@ -145,7 +139,6 @@ Survey fit
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=4in,width=4in]{c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod1/plots/comp_agefit_flt2mkt0.png}
-\label{x}
 \end{figure}
 
 \newpage
@@ -167,7 +160,7 @@ Survey fit
 
 \newpage
 
-### Time series comparisons mode 1 and 2 
+### Time series comparisons model 1 and 2 
 
 \begin{figure}[htbp]
 \centering
@@ -181,9 +174,7 @@ Survey fit
 
 \newpage
 
-
 ### Retrospective analysis
-
 
 \begin{figure}[htbp]
 \centering
@@ -193,9 +184,33 @@ Survey fit
 ### Learned lesson
 
 1. SS presents extensive capabilities to build different stock assessment.
-2. Develop many neccesary analysis of diagnostic in a friendly environment.i.e. data weighting, retrospective.
-3. Excellent tools to review output by plots and tables with use of r4ss.
-4. Is neccesary the use of control version program i.e. github.
-5. We need to continue  learning about SS and methods incorporating. i.e. read Manual, view examples, training.
+2. Develop much necessary analysis of diagnostic in a friendly environment.i.e. data weighting, retrospective.
+3. Excellent tools to review output by plots and tables with the use of r4ss.
+4. Is necessary the use of control version program i.e. github.
+5. We need to continue learning about SS and methods incorporating. i.e. read Manual, view examples, training.
 
+### Tables 
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlrr}
+  \hline
+ & Label & model1 & model2 \\ 
+  \hline
+1 & TOTAL\_like & 342.90 & 301.78 \\ 
+  2 & Survey\_like & 53.98 & 24.86 \\ 
+  3 & Age\_comp\_like & 273.39 & 262.42 \\ 
+  4 & Parm\_priors\_like & 1.42 & 1.56 \\ 
+  5 & Recr\_Virgin\_billions & 1.36 & 0.74 \\ 
+  6 & SR\_LN(R0) & 14.13 & 13.51 \\ 
+  7 & SR\_RkrPower\_steep & 0.63 & 0.82 \\ 
+  8 & NatM\_p\_1\_Fem\_GP\_1 & 0.30 & 0.21 \\ 
+  9 & L\_at\_Amax\_Fem\_GP\_1 & 65.00 & 65.00 \\ 
+  10 & VonBert\_K\_Fem\_GP\_1 & 0.15 & 0.15 \\ 
+  11 & SSB\_Virgin\_thousand\_mt & 1772.99 & 1793.26 \\ 
+  12 & Bratio\_2017 & 0.87 & 0.58 \\ 
+  13 & SPRratio\_2016 & 0.56 & 0.90 \\ 
+   \hline
+\end{tabular}
+\end{table}
 

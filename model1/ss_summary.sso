@@ -3,7 +3,7 @@
 #Foreign copyrights may apply. See copyright.txt for more information.
 mcomun20flota.dat #_DataFile 
 controlflota.dat #_Control 
-Run_Date: Thu Oct 29 14:26:40 2020
+Run_Date: Thu Oct 29 18:47:53 2020
 #_LIKELIHOOD 
 Label logL*Lambda
 TOTAL_LogL 342.898

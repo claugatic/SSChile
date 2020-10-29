@@ -1,0 +1,14 @@
+Label      model1      model2
+1              TOTAL_like  342.898000  301.780000
+2             Survey_like   53.981000   24.855900
+3           Age_comp_like  273.386000  262.418000
+4        Parm_priors_like    1.424540    1.564000
+5    Recr_Virgin_billions    1.364480    0.737219
+6               SR_LN(R0)   14.126300   13.510600
+7       SR_RkrPower_steep    0.626954    0.821420
+8       NatM_p_1_Fem_GP_1    0.304517    0.213753
+9      L_at_Amax_Fem_GP_1   65.000000   65.000000
+10     VonBert_K_Fem_GP_1    0.150000    0.150000
+11 SSB_Virgin_thousand_mt 1772.990000 1793.260000
+12            Bratio_2017    0.870559    0.584713
+13          SPRratio_2016    0.562062    0.896301
