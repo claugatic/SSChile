@@ -41,7 +41,7 @@ c. Structure control file.
 d. Solve problems following examples, manual_SS, lectures and specially echoinput file.
 e. Review different options to recruitment, include blocks to selectivity.
 f. Generate output and summary to explore a first base model.
-e. Review data weighing options.
+e. Review data weighting options.
 g. Include bias correction SR.
 f. Explore diagnostic options (i.e. retrospective analysis).
 
