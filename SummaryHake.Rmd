@@ -134,7 +134,7 @@ Survey
 
 ### CAA
 
-Survey fit
+Fishery 2 fit
 
 \begin{figure}[htbp]
 \centering
