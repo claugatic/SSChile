@@ -1,7 +1,7 @@
 #V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
 #This is a work of the U.S. Government and is not subject to copyright protection in the United States.
 #Foreign copyrights may apply. See copyright.txt for more information.
-Tue Dec 15 17:52:54 2020
+Fri Dec 18 20:47:20 2020
 
 data.dat  datfilename
 control.dat  ctlfilename
@@ -13,7 +13,7 @@ control.dat  ctlfilename
 2  Do_CumReport
 1  Do_all_priors
 1  SoftBound
-200  N_nudata
+1  N_nudata
 10  Turn_off_phase
 0  MCeval burn_intvl
 1  MCeval thin_intvl
