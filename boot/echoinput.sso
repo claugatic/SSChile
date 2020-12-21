@@ -1,7 +1,7 @@
 #V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
 #This is a work of the U.S. Government and is not subject to copyright protection in the United States.
 #Foreign copyrights may apply. See copyright.txt for more information.
-Fri Dec 18 20:47:20 2020
+Mon Dec 21 19:59:40 2020
 
 data.dat  datfilename
 control.dat  ctlfilename
@@ -59,7 +59,7 @@ rows are fleets; columns are: Fleet_#, fleet_type, timing, area, units, need_cat
 2 #  1 -1 1 1 0.01 # PESQUERIA2
 3 #  3 0.5 1 2 0.03 # CRUCERO
 YPR_optimize_mask:  1 1 0
-59 records
+60 records
 first catch record:  -999 1 1 0 0.05
 last catch record:  2020 1 2 31240 0.3
  equ, seas:   -1 1 catches:  0 0 0
@@ -106,8 +106,7 @@ Fleet Units Err_Type SD_Report
  1 1 0 0
  2 1 0 0
  3 1 0 0
-24 nobs_survey 
- -999 0 0 0 0
+23 nobs_survey 
  1993 8 3 198540 0.35
  1995 8 3 505765 0.35
  1997 8 3 712878 0.35

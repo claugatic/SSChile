@@ -3,7 +3,7 @@
 #Foreign copyrights may apply. See copyright.txt for more information.
 data.dat #_DataFile 
 control.dat #_Control 
-Run_Date: Fri Dec 18 20:47:20 2020
+Run_Date: Mon Dec 21 19:59:40 2020
 #_LIKELIHOOD 
 Label logL*Lambda
 TOTAL_LogL 114.503
